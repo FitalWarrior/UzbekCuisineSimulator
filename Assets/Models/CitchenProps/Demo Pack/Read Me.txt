@@ -1,0 +1,34 @@
+Hey, thanks for purchasing my low poly kitchen pack.
+
+License
+ You can use these assets for whatever you want and you don't have to give me any credit (if you still want to, it's highly appreciated). 
+ The only thing you can't do is publish these assets by themself (like reselling them or offer them somewhere for free). But I think that's pretty obvious. 
+ If you have any questions, just contact me on itch.io or Twitter.
+
+Importing to Unity:
+ 1. Drag both the "Models/fbx" and "Textures" folders into your unity 
+ 2. Create a "Main" material using the "Color" and "Mask Map" textures, a "Glass" material, and a "White emission" material
+ 3. Now set the materials in the import settings of the objects to use the created materials. 
+
+Importing to Unreal Engine:
+ 0. Before importing any models, set up 3 materials. The "Main Material", "Glass", and "White Emission". 
+    For the Main material, use the 4 textures from the "Textures" folder (excluding the "Mask" Texture).
+ 1. When importing a model, I recommend you use the "File/Import Into Level..." option because it preserves the pivots of all the parts and creates a blueprint of the entire object. 
+ 2. Select the .fbx file for the object you want to import. 
+ 3. Uncheck the "RootNode" and check "Import as Dynamic" if you want the object to be movable at playtime
+ 4. In the "Materials" tab of the importer, right-click each material.
+    There you can select the proper material you created at the beginning. That way all models use the same
+    material and all textures are used correctly.
+
+Changing colors:
+ For coloring, these assets use textures. This helps with performance and is easy to work with. To change colors, just edit the "kitchenPack_color.png" file. 
+ If you want to have two different colors at the same time (like a blue cabinet and a red cabinet), duplicate the main material and 
+ assign a copy of the color texture to it. Now you have 2 main materials, each using its own color texture, which you can edit.
+
+Contact me:
+ Twitter: twitter.com/ZailDev
+ Itch.io: zail1337.itch.io
+ Reddit : reddit.com/u/xxzailxx
+
+Having issues?
+ If you have any issues with this asset pack, please create a post in the "Issues"-Board here: itch.io/t/1445861/issues
